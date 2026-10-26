@@ -1,0 +1,71 @@
+{
+  "name": "hypr-tools",
+  "version": "2.0.0",
+  "description": "178-tool MCP server for Hyprland desktop automation \u2014 audio, windows, themes, screenshots, Bluetooth, media, macros, LED control, and more",
+  "type": "module",
+  "license": "MIT",
+  "author": "Aryan Arora (https://stuckaryan.in)",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/0aaryan/hypr-tools.git"
+  },
+  "homepage": "https://github.com/0aaryan/hypr-tools#readme",
+  "bugs": {
+    "url": "https://github.com/0aaryan/hypr-tools/issues"
+  },
+  "mcpName": "io.github.0aaryan/hypr-tools",
+  "keywords": [
+    "mcp",
+    "mcp-server",
+    "model-context-protocol",
+    "hyprland",
+    "wayland",
+    "linux",
+    "desktop-automation",
+    "ai-tools",
+    "claude",
+    "claude-desktop",
+    "cursor",
+    "cline",
+    "window-management",
+    "audio-control",
+    "screenshot",
+    "bluetooth",
+    "media",
+    "macros",
+    "theme",
+    "wallpaper",
+    "led",
+    "rgb",
+    "notifications",
+    "clipboard",
+    "pipewire",
+    "arch-linux"
+  ],
+  "bin": {
+    "hypr-tools": "./build/index.js"
+  },
+  "files": [
+    "build/",
+    "src/tools/*.py",
+    "src/tools/*.sh",
+    "README.md",
+    "LICENSE"
+  ],
+  "engines": {
+    "node": ">=18"
+  },
+  "scripts": {
+    "build": "tsc",
+    "prepare": "tsc",
+    "dev": "npx tsx src/index.ts",
+    "inspector": "npx @modelcontextprotocol/inspector build/index.js"
+  },
+  "dependencies": {
+    "@modelcontextprotocol/sdk": "^1.12.1"
+  },
+  "devDependencies": {
+    "@types/node": "^22.0.0",
+    "typescript": "^5.7.0"
+  }
+}

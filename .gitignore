@@ -1,0 +1,14 @@
+node_modules/
+build/
+*.tgz
+.DS_Store
+__pycache__/
+*.pyc
+
+# local voice-mode virtualenv
+voice-venv/
+
+# private publishing notes
+PUBLISH_GUIDE.md
+PUBLISH_NOW.sh
+MARKETPLACE_SUBMISSIONS.md
